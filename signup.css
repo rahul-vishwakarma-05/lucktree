@@ -9,7 +9,7 @@ html{
     font-size: 62.5%;
 }
 body{
-    overflow-y: hidden;
+/*     overflow-y: hidden; */
     height: 100vh;
     font-family: 'Josefin Sans', sans-serif;
     background: url('luck4.png')top no-repeat;
