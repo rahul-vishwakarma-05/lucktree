@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Explora&display=swap" rel="stylesheet">
+    <title>LOGIN</title>
+  </head>
+
+  <body>
+    <div class="container">
+    	<div class="screen">
+    		<div class="screen__content">
+    			<form class="login">
+            <h3 class="company-name">LUCK TREE</h3>
+    				<div class="login__field">
+    					<i class="login__icon fas fa-user"></i>
+    					<input type="text" class="login__input" placeholder="User name / Email">
+    				</div>
+    				<div class="login__field">
+    					<i class="login__icon fas fa-lock"></i>
+    					<input type="password" class="login__input" placeholder="Password">
+    				</div>
+    				<button class="button login__submit">
+    					<span class="button__text">Log In Now</span>
+    					<i class="button__icon fas fa-chevron-right"></i>
+    				</button>
+    			</form>
+    			<div class="social-login">
+    				<h5>CREATE ACCOUNT</h5>
+    			</div>
+          <div class="social-contact">
+            <h5>CONTACT US</h5>
+          </div>
+    		</div>
+    		<div class="screen__background">
+    			<span class="screen__background__shape screen__background__shape4"></span>
+    			<span class="screen__background__shape screen__background__shape3"></span>
+    			<span class="screen__background__shape screen__background__shape2"></span>
+    			<span class="screen__background__shape screen__background__shape1"></span>
+    		</div>
+    	</div>
+
+      <div class="box-india">
+        <h3 class="box-india-floter">TAP TO LOGIN</h3>
+      </div>
+      <div class="box-logo">
+        <h3>LUCK TREE</h3>
+      </div>
+
+    </div>
+
+    <script type="text/javascript">
+       let india_box = document.querySelector('.box-india')
+       india_box.addEventListener('click' , ()=>{
+
+         india_box.style.animation = 'india_fade 2.5s ease-in forwards';
+
+         setTimeout(function () {
+           india_box.style.display = 'none';
+           document.querySelector('.box-logo').style.animation  = 'india_fade 1.7s ease-in-out forwards';
+         }, 2500);
+
+         setTimeout(function () {
+           document.querySelector('.box-logo').style.display = 'none';
+           document.querySelector('.company-name').classList.add('company-animation');
+         }, 3000);
+
+       })
+       document.querySelector('.social-login > h5').addEventListener('click', () =>{
+         window.location.href = window.location.origin + "/signup.html";         
+       });
+    </script>
+
+  </body>
+
+</html>
