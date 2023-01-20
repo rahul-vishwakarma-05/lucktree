@@ -191,7 +191,7 @@ body {
 	width: 160px;
 	text-align: center;
 	bottom: 0px;
-	right: 0px;
+	right: 5px;
 	color: #fff;
 }
 
@@ -199,11 +199,11 @@ body {
   left : 0px;
 }
 
-.social-login > h5:hover , .social-contact > h5:hover{
-  transform: scale(1.025);
+.social-login > a:hover , .social-contact > h5:hover{
+  transform: scale(1.025); 
 }
 
-.social-login > h5 , .social-contact > h5{
+.social-login > a > h5,.social-contact > h5{
   color: #2333a5;
   background: white;
   padding: 0.2rem;
@@ -213,7 +213,6 @@ body {
   box-shadow: 2px 2px 4px;
   border-radius: 100vw;
 }
-
 .social-contact > h5{
   margin-left: 10px;
 }
